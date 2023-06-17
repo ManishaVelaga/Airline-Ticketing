@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Flight Search</title>
+    <style>
+
+body{
+        background-image: url("https://img.freepik.com/premium-photo/male-hand-holding-plane-airplane-icon-blue-background-banner-nline-ticket-purchase-travel-icons-about-travel-planning-transportation-hotel-flight-passport-flight-ticket-booking-concept_150455-6482.jpg");
+        background-size: cover;
+    }
+        .center {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .center, th, td {
+            border: 1px solid black;
+            border: 0px;
+        }
+        th, td {
+            padding: 8px;
+            border: 0px;
+        }
+        input {
+        width: 150px;
+    }
+        .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+        .Navigation {
+    display: flex;
+    justify-content: space-between;
+    display:inline;
+    
+  }
+  
+  ul {
+    display: flex;
+    align-items:center;
+    padding-left: 1000px;
+    padding-top: -10px;
+    background-color: #000000;
+  }
+      
+   li {
+     padding-left: 400px;
+    list-style: none;
+    padding: 1rem;
+  }
+  
+   a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  .form{
+   text-align: center;
+   padding-top: 100px;
+   
+ }
+    </style>
+</head>
+<body>
+    <div class="Navigation">
+    <ul>
+        <li><a href="bookings.php">View Bookings</a></li>
+        <li><a href="usser_log.php">Logout</a></li>
+    </ul>
+</div>
+   <div class="form">
+    <h1>Flight Search</h1>
+    <form method="post" action="search.php">
+        <table  class="center">
+            <tr>
+                <td><label for="searchDate">Date:</label></td>
+                <td><input type="date" id="searchDate" name="searchDate" required></td>
+            </tr>
+            <tr>
+                <td><label for="searchTime">Time:</label></td>
+                <td><input type="time" id="searchTime" name="searchTime" required></td>
+            </tr>
+            <tr>
+                <td><label for="fromAirport">From:</label></td>
+                <td><input type="text" id="fromAirport" name="fromAirport" required></td>
+            </tr>
+            <tr>
+                <td><label for="toAirport">To:</label></td>
+                <td><input type="text" id="toAirport" name="toAirport" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Search"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+    
+</body>
+</html>
+

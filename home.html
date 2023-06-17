@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap'); 
+   
+   * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Mate SC', serif;;
+    }
+
+    .bg {
+        background-image: url("https://i.pinimg.com/originals/85/5d/a7/855da75316bc5435ed9e09d0625f347f.jpg");
+        height: 100%;
+        width: 100%;
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+	  background-size: 2000px 800px;
+ 	   position: fixed;
+
+    }
+
+    .nav {
+        position: relative;
+        padding: 35px;
+        background-color: #E966A0;
+    }
+
+    .nav img {
+        position: absolute;
+        top: 0px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    .nav ul {
+        position: relative;
+        top: -5px;
+        text-align: right;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .nav li a {
+        position: relative;
+        display: block;
+        color: white;
+        padding: 0px 15px;
+        top: 0px;
+        left: 10px;
+        right: 10px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .nav li a:hover {
+        color: red;
+    }
+
+    .name {
+        position: relative;
+        text-align: center;
+        top: 0px;
+    }
+
+    .name .subname {
+        position: relative;
+        text-align: center;
+        top: 0px;
+        color: rgb(0, 0, 0);
+    }
+
+    .name .subname p {
+        text-align: center;
+    }
+
+   /* .box {
+        position: relative;
+        width: 270px;
+        height: 280px;
+        margin: 0px;
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+        border-radius: 15px;
+        overflow: hidden;
+        top: 80px;
+        left: 50px;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box [type="submit"] {
+        position: relative;
+        padding: 6px;
+        top: 40px;
+        left: -50px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 123, 0);
+
+
+    }
+
+    .box button:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 123, 0);
+    }
+
+    .box h1 {
+        position: relative;
+        text-align: center;
+        transform: rotate(270deg);
+        top: -10px;
+        left: 95px;
+        letter-spacing: 15px;
+    }
+
+    .box input {
+        position: relative;
+        top: 20px;
+        left: -80px;
+    }
+
+    .box [type="Pin"] {
+        padding: 0px 56px;
+        float: left;
+    }*/
+
+    .bottom-text {
+        position: relative;
+        text-align: left;
+        top: 180px;
+        <!--left: -200px;-->
+        font-style: italic;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        top: 15px;
+        position: absolute;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 10px;
+        background-color: rgb(253, 0, 55);
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+    .social {
+        position: relative;
+        top: -55px;
+    }
+
+    [type="fb"] {
+        position: absolute;
+        float: right;
+        size: 1px;
+        right: 12px;
+        top: 200px;
+
+    }
+
+    [type="in"] {
+        position: absolute;
+        float: right;
+        size: 1px;
+        right: 10px;
+        top: 250px;
+    }
+
+    [type="g"] {
+        position: absolute;
+        float: right;
+        size: 1px;
+        right: 10px;
+        top: 300px;
+    }
+
+    .disb {
+        background-color: rgb(255, 102, 0);
+    }
+
+    .disb a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .bx select {
+        position: relative;
+        align-items: center;
+        top: 18px;
+        right: 80px;
+        width: 173.5px;
+        border-spacing: 10px;
+    }
+
+    .take {
+        position: relative;
+        top: 19vh;
+        left: 5%;
+        font-family: 'Mate SC', serif;
+font-size:125%;
+    }
+footer {
+  background-color: #E966A0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.take h1 {
+    font-family: 'Mate SC', serif;
+}
+.take h2 {
+    font-family: 'Mate SC', serif;
+}
+.wel {
+    margin:65px;
+    font-size:0.9em;
+}
+h1 { 
+    font-family: 'Mate SC', serif;
+}
+</style>
+
+<body>
+    
+    <div class="bg">
+        <div class="nav">
+            
+            <ul>
+                
+                <li style="float:right"><a href="contact.html"><font size="5">Contact</font></a></li>
+   <li style="float:right"><a href="adminlogin.php"><font size="5">Admin</font></a></li>
+               <li style="float:right"><a href="usser_log.php"><font size="5">User</font></a></li>
+                
+            </ul>
+        </div>
+        <div class="name">
+            <h1>Airnet</h1>
+
+            <div class="subname">
+                <p>Global Horizons, Connected Skies</p>
+            </div>
+        </div>
+        
+        
+        <br class="bg" class>
+<br class="take">
+<div class="wel">
+<br><br><h1>Welcome to AirNet -<br> the gateway to unforgettable travel experiences! <br>Our mission is simple: to bridge continents and elevate your journey to new heights. <br> Get ready to embark on a seamless adventure, where borders dissolve, cultures <br>intertwine, and your dreams take flight. </h1> </div>
+
+</div>
+</div>
+    <div class="disb">
+        <footer class="dis">
+          
+            
+            
+            
+            <p>By visiting and using this site, you consent to the privacy policy, and placing of cookies by
+                Airnet.com</p>
+            <p>Copyright @ 2023 Airnet. All rights reserved.
+            </p>
+            <div class="social-link">
+        </footer>
+    </div>
+</body>
+
+</html>

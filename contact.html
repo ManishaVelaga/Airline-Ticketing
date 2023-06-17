@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+ <script>
+        function showAlert() {
+            alert("Thank you for your query. We will get back to you soon!");
+        }
+    </script>
+  </head>
+  <body>
+
+<div class="nav">
+            
+            <ul>
+               
+                <li style="float:right"><a href="contact.html">Contact</a></li>
+		    <li style="float:right"><a href="Home.html">Home</a></li>
+                <div class="dropdown">
+                   <!-- <li style="float:right"><a href="#contact">Login</a></li>
+                    <div class="dropdown-content">
+                        <a href="user.html">User Login</a>
+                        <a href="slogin.html">Staff Login</a>
+                        <a href="dlogin.html">Delivary Boy Login</a>-->
+                    </div>
+                </div>
+            </ul>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h2 class="title">Let's get in touch</h2>
+          <p class="text">
+           <h1> We'd love to hear from you! </h1><br>
+            Please fill out our contact form with your name, email address, phone number, and message. 
+            Our team will get back to you as soon as possible.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Airnet</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>airnet@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>1234567890</p>
+            </div>
+          </div>
+
+         <!-- <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>-->
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form>
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+Username:
+              <input type="text" name="name" class="input" />
+            <!-- <label for="">Username</label>-->
+             <!-- <span>Username</span>-->
+            </div>
+            <div class="input-container">
+Email:
+              <input type="email" name="email" class="input" />
+              <!--<label for="">Email</label>
+              <span>Email</span>-->
+            </div>
+            <div class="input-container">
+ Phone:
+              <input type="tel" name="phone" class="input" />
+             <!-- <label for="">Phone</label>
+              <span>Phone</span>-->
+            </div>
+            <div class="input-container textarea">
+Message:
+              <textarea name="message" class="input"></textarea>
+             <!-- <label for="">Message</label>
+              <span>Message</span>-->
+            </div>
+            <input type="submit"  value="send" class="btn" onclick="showAlert()">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
